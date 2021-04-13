@@ -1,0 +1,20 @@
+.nav-link {
+    font-weight: 300;
+    transition: ease-in-out 0.5s;
+}
+
+.collapse .nav-link a {
+    
+    color: #5D6678;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.container-fluid {
+    display: flex !important;
+    justify-content: space-between !important;
+    height: 80px !important;
+    width: 100% !important;
+    align-items: center !important;
+    padding: 0 40px !important;
+}
