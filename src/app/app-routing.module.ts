@@ -10,13 +10,16 @@ import { ConsultasComponent } from './pages/consultas/consultas.component';
 import { FacturacionComponent } from './pages/facturacion/facturacion.component';
 import { UsuariosComponent } from './pages/usuarios/usuarios.component';
 import { AuthGuard } from './guard/auth.guard';
+import { RegistrospacientesComponent } from './pages/registrospacientes/registrospacientes.component';
 
 const routes: Routes = [
-  { path: 'home'    , component: HomeComponent , canActivate :[AuthGuard] 
+  { path: 'home'    , component: HomeComponent 
+  //, canActivate :[AuthGuard] 
  },
   { path: 'registro', component: RegistroComponent },
-  { path: 'login'   , component: LoginComponent },
+  { path: 'login', component: LoginComponent },
   { path: 'registrosgenerales', component: RegistrosgeneralesComponent },
+  { path: 'registrospacientes', component: RegistrospacientesComponent },
   { path: 'reportes', component: ReportesComponent },
   { path: 'consultas', component: ConsultasComponent },
   { path: 'facturacion', component: FacturacionComponent },
